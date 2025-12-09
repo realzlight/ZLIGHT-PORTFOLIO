@@ -1,7 +1,14 @@
 # IMPORTING
-import time, random, os
+import time, random, os, json
 
 # =============== CLEAN "_" BOX SYSTEM ===============
+def b():
+	print("_".center(60,"_"))
+
+
+
+
+
 def box(msg):
     print("\n" + "_".center(60, "_"))
     print("")
@@ -9,6 +16,20 @@ def box(msg):
         print(line.center(60))
     print("")
     print("_".center(60, "_") + "\n")
+
+# TRUESS
+infisherman = True
+inkohana = False
+incrater = False
+inclassic = False
+inecostier = False
+inlost = False
+injungle = False
+
+if inkohana == True:
+	fishes = [{"name":"Lava Fish", "price":300, "chance": 40}]
+
+
 
 
 # STARTER BANNER
@@ -36,6 +57,8 @@ if mainchoice == "1":
     print("")
     print("Type /help For Help".center(60))
     print("")
+    print("FISHERMAN ISLAND".center(60))
+    print("")
     print("_".center(60,"_"))
     print("")
     name = input("Enter Your Name: ")
@@ -48,27 +71,36 @@ else:
     running = False
 
 
-# PLAYER ATTRIBUTES
-money = 100
+# PLAYER ATTRIBUTe
+money = 0
 inv = []  
-owned_rods = ["Wooden Rod"]
-selected_rod = "Wooden Rod"
+owned_rods = ["Starter Rod"]
+selected_rod = "Starter Rod"
 
 # RODS
 rods = {
-    "Wooden Rod": {"price": 0, "boost": 0},
-    "Iron Rod": {"price": 200, "boost": 10},
-    "Golden Rod": {"price": 500, "boost": 25},
-    "Diamond Rod": {"price": 1500, "boost": 50}
+    "Starter Rod": {"price": 0, "boost": 0},
+    "Luck Rod": {"price": 2000, "boost": 7},
+    "Damascus Rod": {"price": 5000, "boost": 15},
+    "MidNight Rod": {"price": 10000, "boost": 25},
+    "SteamPunk Rod": {"price": 20000, "boost": 30},
+   
+    	
 }
 
 # FISHES
-fishes = [
+if infisherman == True:
+    fishes = [
     {"name": "Salmon", "chance": 60, "price": 100},
     {"name": "Tuna", "chance": 60, "price": 150},
-    {"name": "Tropical Fish", "chance": 30, "price": 200},
-    {"name": "Shark", "chance": 8, "price": 600},
-    {"name": "Whale", "chance": 2, "price": 1500},
+    {"name": "Yellow Damsel Fish", "chance": 30, "price": 200},
+    
+    {"name": "Astral Damsel Fish", "chance": 8, "price": 600},
+    
+    {"name": "Conch Shell", "chance": 45, "price": 50},
+    
+    {"name": "Troll Fish", "chance" : 20, "price" : 1},
+    
 ]
 
 
@@ -174,11 +206,30 @@ def sell():
 # =============== FISHING ===============
 def fish():
     global selected_rod
-
+    msg = ["Something Is In Your Dart...","Your Rod's String Is Shaking...", "Get Up Something Is Underneath...","Fish Is In Your Dart Maybe..."]
+    dura = random.randint(3,5)
     duration = random.randint(1, 10)
-    box("Fishing...")
+    print("")
+    b()
+    print("")
+    print("Fishing...".center(60))
     time.sleep(duration)
-
+    print("")
+    rand = random.choice(msg)
+    print(rand.center(60))
+   
+    print("")
+    time.sleep(dura)
+    print("")
+    print("Hurry Up! Pull Fishing Rod, Fast!".center(60))
+    print("")
+    pull1 = input("Enter 'p' To Pull The Fish >> ")
+    pull2 = input("Enter 'p' To Pull The Fish >> ")
+    pull3 = input("Enter 'p' To Pull The Fish >> ")
+    pull4 = input("Enter 'p' To Pull The Fish >> ")
+    pull5 = input("Enter 'p' To Pull The Fish >> ")
+    
+    
     boost = rods[selected_rod]["boost"]
     weighted = []
 
@@ -189,12 +240,334 @@ def fish():
     caught = random.choice(weighted)
     inv.append(caught)
 
-    box(f"You caught a {caught['name']} worth ₹{caught['price']}!")
+    box(f"You caught a {caught['name']} worth ₹{caught['price']} %{caught['chance']}!")
+b()
+# ============== ISLANDS/DAVID ==============
+def sail():
+    global infisherman, inkohana, incrater, inclassic, inecostier, inlost, injungle, fishes
 
+    print("")
+    time.sleep(0.2)
+    b()
+    print("")
+    time.sleep(0.2)
+    print("DAVID".center(60))
+    print("")
+    time.sleep(0.5)
+    print("David : Hello There! Iam David I'm A Sailor I'll Take You To Different Islands ")
+    print("")
+    print("1. FISHERMAN ISLAND\n2. KOHANA VOLCANO\n3. CLASSIC ISLAND\n4. CRATER ISLAND\n5. ANCIENT JUNGLE\n6. ECOSTIER DEPTS\n7. LOST ISLE".center(60))
+    time.sleep(0.2)
+    print("")
+    islandchoice = input("Enter Island No. >>> ")
+
+    # ====================== FISHERMAN ======================
+    if islandchoice == "1":
+        os.system("clear")
+        print("")
+        b()
+        print("")
+        print("Ok Fine We Are Heading To The FISHERMAN ISLAND".center(60))
+        print("Its 5s Away From Here!".center(60))
+        print("")
+        b()
+        time.sleep(5)
+        os.system("clear")
+        print("")
+        print("Fish It!".center(60))
+        print("")
+        print("FISHERMAN ISLAND".center(60))
+        print("")
+        b()
+        print("")
+
+        infisherman = True
+        inkohana = False
+        incrater = False
+        inclassic = False
+        inecostier = False
+        inlost = False
+        injungle = False
+
+        fishes = [
+            {"name": "Salmon", "chance": 60, "price": 100},
+            {"name": "Tuna", "chance": 60, "price": 150},
+            {"name": "Yellow Damsel Fish", "chance": 30, "price": 200},
+            {"name": "Astral Damsel Fish", "chance": 8, "price": 600},
+            {"name": "Conch Shell", "chance": 45, "price": 50},
+            {"name": "Troll Fish", "chance": 20, "price": 1},
+        ]
+
+    # ====================== KOHANA VOLCANO ======================
+
+    elif islandchoice == "2":
+        os.system("clear")
+        print("")
+        b()
+        print("")
+        print("Ok We Are Going To Kohana Volcano! Wait A Bit!".center(60))
+        print("")
+        b()
+        time.sleep(5)
+        os.system("clear")
+        print("")
+        print("Fish It!".center(60))
+        print("")
+        print("KOHANA VOLCANO".center(60))
+        print("")
+        b()
+        print("")
+
+        infisherman = False
+        inkohana = True
+        incrater = False
+        inclassic = False
+        inecostier = False
+        inlost = False
+        injungle = False
+
+        fishes = [
+            {"name": "Lava Fish", "price": 300, "chance": 40}
+        ]
+        
+        
+#=================== Crater Island ============
+    elif islandchoice == "3":
+        os.system("clear")
+        print("")
+        b()
+        print("")
+        print("Ok We Are Going To Crater Island! Wait A Bit!".center(60))
+        print("")
+        b()
+        time.sleep(5)
+        os.system("clear")
+        print("")
+        print("Fish It!".center(60))
+        print("")
+        print("CRATER ISLAND".center(60))
+        print("")
+        b()
+        print("")
+
+        infisherman = False
+        inkohana = False
+        incrater = True
+        inclassic = False
+        inecostier = False
+        inlost = False
+        injungle = False
+
+        fishes = [
+            {"name": "CraterFish", "price": 300, "chance": 40}
+        ]
+
+#================== Class Island ===================
+    elif islandchoice == "4":
+        os.system("clear")
+        print("")
+        b()
+        print("")
+        print("Ok We Are Going To Classic Island! Wait A Bit!".center(60))
+        print("")
+        b()
+        time.sleep(5)
+        os.system("clear")
+        print("")
+        print("Fish It!".center(60))
+        print("")
+        print("CLASSIC ISLAND".center(60))
+        print("")
+        b()
+        print("")
+
+        infisherman = False
+        inkohana = False
+        incrater = False
+        inclassic = True
+        inecostier = False
+        inlost = False
+        injungle = False
+
+        fishes = [
+            {"name": "Classic Fish", "price": 300, "chance": 40}
+        ]
+        
+        
+# =============== Ecoustier ===============
+
+    elif islandchoice == "5":
+        os.system("clear")
+        print("")
+        b()
+        print("")
+        print("Ok We Are Going To ECOUSTIER ISLAND! Wait A Bit!".center(60))
+        print("")
+        b()
+        time.sleep(5)
+        os.system("clear")
+        print("")
+        print("Fish It!".center(60))
+        print("")
+        print("ECOUSTIER ISLAND".center(60))
+        print("")
+        b()
+        print("")
+
+        infisherman = False
+        inkohana = False
+        incrater = False
+        inclassic = False
+        inecostier = True
+        inlost = False
+        injungle = False
+
+        fishes = [
+            {"name": "Eco Fish", "price": 300, "chance": 40}
+        ]
+
+
+
+    elif islandchoice == "6":
+        os.system("clear")
+        print("")
+        b()
+        print("")
+        print("Ok We Are Going To ANCIENT JUNGLE! Wait A Bit!".center(60))
+        print("")
+        b()
+        time.sleep(5)
+        os.system("clear")
+        print("")
+        print("Fish It!".center(60))
+        print("")
+        print("ANCIENT JUNGLE".center(60))
+        print("")
+        b()
+        print("")
+
+        infisherman = False
+        inkohana = False
+        incrater = False
+        inclassic = False
+        inecostier = False
+        inlost = False
+        injungle = True
+
+        fishes = [
+            {"name": "Jungle Fish", "price": 300, "chance": 40}
+        ]
+        
+    elif islandchoice == "7":
+        os.system("clear")
+        print("")
+        b()
+        print("")
+        print("Ok We Are Going To LOST ISLE! Wait A Bit!".center(60))
+        print("")
+        b()
+        time.sleep(5)
+        os.system("clear")
+        print("")
+        print("Fish It!".center(60))
+        print("")
+        print("LOST ISLE".center(60))
+        print("")
+        b()
+        print("")
+
+        infisherman = False
+        inkohana = True
+        incrater = False
+        inclassic = False
+        inecostier = False
+        inlost = True
+        injungle = False
+
+        fishes = [
+            {"name":"Lost Fish", "price": 300, "chance": 40}
+        ]
+
+# =============== SAVE SYSTEM (MOVED UP) ===============
+def save_game():
+    data = {
+        "money": money,
+        "inv": inv,
+        "owned_rods": owned_rods,
+        "selected_rod": selected_rod,
+        "islands": {
+            "infisherman": infisherman,
+            "inkohana": inkohana,
+            "incrater": incrater,
+            "inclassic": inclassic,
+            "inecostier": inecostier,
+            "inlost": inlost,
+            "injungle": injungle
+        }
+    }
+
+    with open("save.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+    box("Game Saved Successfully!")
+
+def load_game():
+    global money, inv, owned_rods, selected_rod
+    global infisherman, inkohana, incrater, inclassic, inecostier, inlost, injungle, fishes
+
+    try:
+        with open("save.json", "r") as f:
+            data = json.load(f)
+
+        money = data["money"]
+        inv = data["inv"]
+        owned_rods = data["owned_rods"]
+        selected_rod = data["selected_rod"]
+
+        # Load islands
+        island = data["islands"]
+        infisherman = island["infisherman"]
+        inkohana = island["inkohana"]
+        incrater = island["incrater"]
+        inclassic = island["inclassic"]
+        inecostier = island["inecostier"]
+        inlost = island["inlost"]
+        injungle = island["injungle"]
+
+        # Restore correct fish list
+        if infisherman:
+            fishes = [
+                {"name": "Salmon", "chance": 60, "price": 100},
+                {"name": "Tuna", "chance": 60, "price": 150},
+                {"name": "Yellow Damsel Fish", "chance": 30, "price": 200},
+                {"name": "Astral Damsel Fish", "chance": 8, "price": 600},
+                {"name": "Conch Shell", "chance": 45, "price": 50},
+                {"name": "Troll Fish", "chance": 20, "price": 1},
+            ]
+        elif inkohana:
+            fishes = [{"name": "Lava Fish", "price": 300, "chance": 40}]
+        elif incrater:
+            fishes = [{"name": "CraterFish", "price": 300, "chance": 40}]
+        elif inclassic:
+            fishes = [{"name": "Classic Fish", "price": 300, "chance": 40}]
+        elif inecostier:
+            fishes = [{"name": "Eco Fish", "price": 300, "chance": 40}]
+        elif injungle:
+            fishes = [{"name": "Jungle Fish", "price": 300, "chance": 40}]
+        elif inlost:
+            fishes = [{"name": "Lost Fish", "price": 300, "chance": 40}]
+
+        box("Game Loaded Successfully!")
+
+    except FileNotFoundError:
+        box("No save file found!")
+    except:
+        box("Failed to load save!")
 
 # =============== MAIN LOOP ===============
+# =============== MAIN LOOP ===============
 while running:
-    user = input(f"{name}: ")
+    user = input(f"{name}: ").strip().lower()
 
     if user == "/inv":
         inventory()
@@ -214,42 +587,33 @@ while running:
     elif user == "/sell":
         sell()
 
-    elif user == "/exit":
-        box("Goodbye!")
-        break
+    elif user == "/sail":
+        sail()
+
+    elif user == "/save":
+        save_game()
+
+    elif user == "/load":
+        load_game()
+
     elif user == "/help":
-    	print("")
-    	print("_".center(60,"_"))
-    	print("HELP".center(60))
-    	print("")
-    	time.sleep(0.2)
-    	print("/inv")
-    	time.sleep(0.2)
-    	print("/fish")
-    	time.sleep(0.2)
-    	print("/rods")
-    	time.sleep(0.2)
-    	print("/selectrod")
-    	print("/shop")
-    	time.sleep(0.2)
-    	print("/sell")
-    	time.sleep(0.2)
-    	print("/exit")
-    	time.sleep(0.2)
-    	print("/help")
-    	time.sleep(0.2)
-    	print("/bal")
-    	print("")
-    	print("_".center(60,"_"))
-    	print("_")
-    elif user == "/bal":
-    	print("")
-    	print("_".center(60,"_"))
-    	print("")
-    	print("Current Money :",money,"$")
-    	print("")
-    	print("_".center(60,"_"))
-    	print("_")
+        box(
+            "Available Commands:\n"
+            "/inv       - View Inventory\n"
+            "/fish      - Go Fishing\n"
+            "/rods      - View Owned Rods\n"
+            "/selectrod - Select Rod\n"
+            "/shop      - Buy New Rods\n"
+            "/sell      - Sell Fish\n"
+            "/sail      - Travel To Islands\n"
+            "/save      - Save Game\n"
+            "/load      - Load Game\n"
+            "/exit      - Exit Game"
+        )
+
+    elif user == "/exit":
+        box("Exiting game... Goodbye!")
+        running = False
 
     else:
-        box("Unknown command!")
+        box("Invalid command! Type /help for commands.")
