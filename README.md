@@ -21,7 +21,7 @@ DESCRIPTION - PRO CODER
 
 SUMMARY - LEARNING CODING FROM 10 Y/O. CAN BUILD SYSTEM IN PYTHON. CAN USE JAVA FOR DATA STRUCTURE AND ALGORITHMS (DSA). C FOR BASIC THINGS OR OPERATING SYSTEMS OR FOR DEEP ANALYSIS OF COMPUTER STRUCTURE. THIS GITHUB PAGE IS NOT TOO OLD (LAST OF 2025). I HAVE BUILD 5 OR 6 SYSTEMS IN PYTHON IN 15 DAYS YOU CAN SEE MY PROJECTS AND SOURCE CODE BELOW.
 
-*FUN FACT - HOW CAN SOMEONE BELIEVE THAT A 13 Y/O KID CAN CODE IN 5 OR 6 LANGUAGES LOL XD. BUT ITS THE TRUTH. THUS WHOLE README PAGE IS WRITTEN BY ME NO AI OR ChatGPT, GEMINI, CLAUDE, ETC....
+*FUN FACT - HOW CAN SOMEONE BELIEVE THAT A 13 Y/O KID CAN CODE IN 5 OR 6 LANGUAGES LOL XD. BUT ITS THE TRUTH. THIS WHOLE README PAGE IS WRITTEN BY ME NO AI OR ChatGPT, GEMINI, CLAUDE, ETC....
 IF YOU WANNA TALK TO ME "@real_zlight" INSTA I'D FOLLOW ME THERE. *I DON'T FREELANCE OR TRYING TO EARN MONEY FROM MY SKILLS I AM JUST DEVELOPING IT BY CREATING PROJECTS AND SHOWCASING HERE*.
 
 *TAGS - #PROCODER #FASTLEARNER #WEBDEV #DATAANALYST
@@ -55,6 +55,8 @@ PROJECTS I HAVE BUILD : -
 
 • Fish It! - A Fishing Game With Save Progress Feature With A Sailing System You Can Go To Different Islands To Catch Different Type Of Fishes That Belong To That Islands With A Interactive Fishing System You Can Buy Rod Having A Good Rod Will Increase The Chance Of Catching Rare Fishes!. You Can Sell Fishes To Make Money
 And Buy Rod. This Is The V1 Of Fish It! Game I'll Upgrade It Later. This Is A Text Game. *LANGUAGE USED - PYTHON*
+
+• Shopify - Build Your Store, But Items And Sell Them For Money!. Each Customer With Different Order And A Product Inventory System To Manage Your Product Inventory. V1 Of Shopify. *LANGUAGE USED - PYTHON*
 
 • LimitlessLibrary - A Library Based Text Game Where You Can Search And Read Books. Admin Can Add Books By Adding It's Title And Content To Get Admin Access You Need To Enter The Correct Password In The Admin Panel (The Pass Is 123). You Can Customize The Pass In The Config. *LANGUAGE USED - PYTHON*
 
