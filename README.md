@@ -301,8 +301,8 @@
     <div class="stack-section" id="projects">
         <h2>Selected Works</h2>
         <div class="card">
-            <h3>MULTI AI TOOLS WEBSITE</h3>
-            <p>A Multi AI Tool SaaS Website That Include AI Job Recommender Advanced, AI Mentor Advanced, AI Chess Teacher, AI Resume Builder</p>
+            <h3>MULTI AI TOOLS</h3>
+            <p>A Multi AI Tool SaaS Website That Include AI Job Recommender Advanced, AI Mentor Advanced, AI Chess Teacher, AI Resume</p>
         </div>
         <div class="card">
             <h3>AI-PEDIA</h3>
